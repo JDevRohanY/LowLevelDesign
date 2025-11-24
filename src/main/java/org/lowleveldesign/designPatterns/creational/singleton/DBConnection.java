@@ -1,7 +1,7 @@
 package org.lowleveldesign.designPatterns.creational.singleton;
 
 public class DBConnection {
-    private static DBConnection instance = null;
+    private static DBConnection instance = new DBConnection();
     String url;
     String username;
     String password;
@@ -12,9 +12,10 @@ public class DBConnection {
     }
 
     public static DBConnection getInstance(){
-        if(instance == null){
+        //This is critical section which is not thread safe in multithreading environment
+        /*if(instance == null){
             instance = new DBConnection();
-        }
+        }*/
         return instance;
     }
 }
