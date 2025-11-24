@@ -1,11 +1,14 @@
 package org.lowleveldesign.designPatterns.creational.singleton;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class DBConnection {
     /* But this will increase the loading time of the application due to eager loading as this object
        Is initialised at compile time, and we cannot pass variable in constructor
 
     private static DBConnection instance = new DBConnection(); */
-
+    private static final Lock lock = new ReentrantLock();
     private static DBConnection instance = null;
     String url;
     String username;
@@ -24,12 +27,24 @@ public class DBConnection {
         return instance;
     } */
 
-    public synchronized static DBConnection getInstance(){
+    /* public synchronized static DBConnection getInstance(){
         //But this result in slow performance as thread need to wait,
         // also this is termed as lazy loading, and once created still thread need to wait
         // as this is synchronised function block
         if(instance == null){
             instance = new DBConnection();
+        }
+        return instance;
+    } */
+
+    //Best approach double locking
+    public static DBConnection getInstance(){
+        if(instance == null){
+            lock.lock();
+            if(instance == null){
+                instance = new DBConnection();
+            }
+            lock.unlock();
         }
         return instance;
     }
