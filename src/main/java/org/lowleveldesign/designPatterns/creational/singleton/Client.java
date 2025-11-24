@@ -1,6 +1,4 @@
-package org.lowleveldesign.designPatterns.singleton;
-
-import java.net.SocketTimeoutException;
+package org.lowleveldesign.designPatterns.creational.singleton;
 
 public class Client {
     public static void main(String[] args) {

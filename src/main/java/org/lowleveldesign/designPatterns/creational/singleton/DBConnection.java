@@ -1,4 +1,4 @@
-package org.lowleveldesign.designPatterns.singleton;
+package org.lowleveldesign.designPatterns.creational.singleton;
 
 public class DBConnection {
     private static DBConnection instance = null;
