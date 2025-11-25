@@ -11,10 +11,6 @@ public class Student {
     private double psp;
     //Constructor
     public Student(Builder builder){
-        //Validation start
-        if(builder.getBatch() >= 2024){
-            throw new RuntimeException("Only students which are of batch 2023 or less are acceptable.");
-        }
         this.name = builder.getName();
         this.age = builder.getAge();
         this.rollNumber = builder.getRollNumber();

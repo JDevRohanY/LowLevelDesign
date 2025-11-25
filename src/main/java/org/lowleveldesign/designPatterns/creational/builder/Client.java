@@ -9,7 +9,7 @@ public class Client {
         builder.setBatch(2018);
         builder.setRollNumber(174);
 
-        Student student = new Student(builder);
+        Student student = builder.build();
         System.out.println(student.getName());
     }
 }
