@@ -4,16 +4,26 @@ public class Client {
     public static void main(String[] args) {
         //Builder builder = new Builder();
 
+        /*
         Student.Builder builder = Student.getBuilder();
         builder.setName("Rohan");
         builder.setAge(25);
         builder.setPsp(95.0);
         builder.setBatch(2018);
         builder.setRollNumber(174);
-
         Student student = builder.build();
-        System.out.println("Name : " + student.getName());
-        System.out.println("Age : " + student.getAge());
+        */
+
+        Student student1 = Student.getBuilder()
+                        .setName("Rohan")
+                        .setAge(25)
+                        .setPsp(95.0)
+                        .setBatch(2018)
+                        .setRollNumber(174)
+                        .build();
+
+        System.out.println("Name : " + student1.getName());
+        System.out.println("Age : " + student1.getAge());
 
     }
 }
