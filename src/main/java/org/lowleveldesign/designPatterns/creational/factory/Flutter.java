@@ -17,7 +17,7 @@ public class Flutter {
     }
 
     // Now we will create factory
-    private UIFactory getUIFactory(Platform platform){
+    public UIFactory getUIFactory(Platform platform){
         if(platform.equals(Platform.IOS)){
             return new IOSFactory();
         }else if (platform.equals(Platform.ANDROID)){

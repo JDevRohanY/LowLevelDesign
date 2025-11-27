@@ -4,6 +4,6 @@ import org.lowleveldesign.designPatterns.creational.factory.components.button.Bu
 import org.lowleveldesign.designPatterns.creational.factory.components.menu.Menu;
 
 public interface UIFactory {
-    public Menu createMenu();
-    public Button createButton();
+    Menu createMenu();
+    Button createButton();
 }
