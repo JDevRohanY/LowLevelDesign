@@ -8,7 +8,7 @@ import org.lowleveldesign.designPatterns.creational.factory.components.menu.Menu
 public class Client {
     public static void main(String[] args) {
         Flutter flutter = new Flutter();
-        UIFactory uiFactory = flutter.getUIFactory(Platform.IOS);
+        UIFactory uiFactory = flutter.getUIFactory(Platform.MAC);
 
         //Create a button
         Button button = uiFactory.createButton();
