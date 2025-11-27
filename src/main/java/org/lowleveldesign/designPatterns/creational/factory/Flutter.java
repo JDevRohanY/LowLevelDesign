@@ -18,17 +18,6 @@ public class Flutter {
 
     // Now we will create factory
     public UIFactory getUIFactory(Platform platform){
-        if(platform.equals(Platform.IOS)){
-            return new IOSFactory();
-        }else if (platform.equals(Platform.ANDROID)){
-            return new AndroidFactory();
-        }else if (platform.equals(Platform.WINDOWS)){
-            return new WindowsFactory();
-        }else if(platform.equals(Platform.MAC)){
-            return new MacFactory();
-        }
-        return null;
+        return UIFactoryFactory.getUIFactory(platform);
     }
-
-
 }
