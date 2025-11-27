@@ -1,7 +1,6 @@
 package org.lowleveldesign.designPatterns.creational.builder;
 
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
 public class Student {

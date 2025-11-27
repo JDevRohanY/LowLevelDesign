@@ -1,5 +1,7 @@
 package org.lowleveldesign.designPatterns.creational.singleton;
 
+import org.lowleveldesign.designPatterns.creational.singleton.DBConnection;
+
 public class Client {
     public static void main(String[] args) {
         //We cannot do this as constructor is private
