@@ -1,11 +1,11 @@
-package org.lowleveldesign.designPatterns.creational.prototype;
+package org.lowleveldesign.designPatterns.creational.prototype.StudentPrototype;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class IntelligentStudent extends Student{
+public class IntelligentStudent extends Student {
     private int iq;
     IntelligentStudent(){
 

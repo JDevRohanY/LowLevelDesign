@@ -1,4 +1,4 @@
-package org.lowleveldesign.designPatterns.creational.prototype;
+package org.lowleveldesign.designPatterns.creational.prototype.StudentPrototype;
 
 public class Client {
     public static void main(String[] args) {

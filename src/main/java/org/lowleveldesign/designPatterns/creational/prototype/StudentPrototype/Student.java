@@ -1,11 +1,11 @@
-package org.lowleveldesign.designPatterns.creational.prototype;
+package org.lowleveldesign.designPatterns.creational.prototype.StudentPrototype;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class Student implements Prototype<Student>{
+public class Student implements Prototype<Student> {
     private String name;
     private int age;
     private String batch;

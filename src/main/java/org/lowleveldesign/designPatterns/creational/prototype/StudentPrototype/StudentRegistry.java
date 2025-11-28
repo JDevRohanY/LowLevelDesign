@@ -1,4 +1,7 @@
-package org.lowleveldesign.designPatterns.creational.prototype;
+package org.lowleveldesign.designPatterns.creational.prototype.StudentPrototype;
+
+import org.lowleveldesign.designPatterns.creational.prototype.StudentPrototype.Batches;
+import org.lowleveldesign.designPatterns.creational.prototype.StudentPrototype.Student;
 
 import java.util.HashMap;
 import java.util.Map;
