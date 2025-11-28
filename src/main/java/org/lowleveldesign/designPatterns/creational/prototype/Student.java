@@ -12,14 +12,20 @@ public class Student implements Prototype<Student>{
     private double psp;
     private double avgBatchPsp;
 
-    @Override
-    public Student clone() {
-        Student student = new Student();
+    Student(){
+    }
+
+    Student(Student student){
         student.name = this.name;
         student.age = this.age;
         student.batch = this.batch;
         student.psp = this.psp;
         student.avgBatchPsp = this.avgBatchPsp;
+    }
+
+    @Override
+    public Student clone() {
+        Student student = new Student();
         return student;
     }
 }

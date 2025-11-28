@@ -7,15 +7,17 @@ import lombok.Setter;
 @Setter
 public class IntelligentStudent extends Student{
     private int iq;
+    IntelligentStudent(){
+
+    }
+
+    //Make constructor which take student as input param
+    IntelligentStudent(IntelligentStudent student){
+        super(student);
+        this.iq = student.iq;
+    }
 
     public IntelligentStudent clone(){
-        IntelligentStudent intelligentStudent = new IntelligentStudent();
-        intelligentStudent.setName(this.getName());
-        intelligentStudent.setAge(this.getAge());
-        intelligentStudent.setPsp(this.getPsp());
-        intelligentStudent.setBatch(this.getBatch());
-        intelligentStudent.setAvgBatchPsp(this.getAvgBatchPsp());
-        intelligentStudent.iq = this.iq;
-        return intelligentStudent;
+        return new IntelligentStudent(this);
     }
 }
