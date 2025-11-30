@@ -9,6 +9,7 @@ public class Client {
     public static void main(String[] args) {
         Flutter flutter = new Flutter();
         UIFactory uiFactory = flutter.getUIFactory(Platform.MAC);
+        flutter.changeTheme(Theme.DARK);
 
         //Create a button
         Button button = uiFactory.createButton();

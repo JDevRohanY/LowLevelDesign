@@ -12,6 +12,7 @@ public class Student implements Prototype<Student> {
     private double psp;
     private double avgBatchPsp;
 
+    //Default constructor is created so that we can create a copy constructor
     Student(){
     }
 
