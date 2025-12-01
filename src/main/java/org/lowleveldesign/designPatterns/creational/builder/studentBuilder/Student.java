@@ -1,4 +1,4 @@
-package org.lowleveldesign.designPatterns.creational.builder;
+package org.lowleveldesign.designPatterns.creational.builder.studentBuilder;
 
 import lombok.Getter;
 

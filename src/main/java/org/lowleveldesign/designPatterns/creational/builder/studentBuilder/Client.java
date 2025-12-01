@@ -1,4 +1,4 @@
-package org.lowleveldesign.designPatterns.creational.builder;
+package org.lowleveldesign.designPatterns.creational.builder.studentBuilder;
 
 public class Client {
     public static void main(String[] args) {
